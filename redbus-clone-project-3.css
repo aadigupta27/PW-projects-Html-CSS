@@ -1,0 +1,961 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    padding: 0px;
+    margin : 0px;
+    box-sizing: border-box;
+    background-color: rgb(243, 242, 242);
+}
+.rb-header{
+    display : flex;
+    align-items : center;
+    position: fixed;
+    padding : 0px 78.5px;
+    color : #4a4a4a;
+    gap : 6px;
+    height : 100px;
+    background: rgb(253, 253, 253);
+    margin-top: -100px;
+}
+.left-header {
+    display : flex;
+    align-items: center;
+}
+.left-header img{
+    width: 5rem;
+    height : 3rem;
+    cursor: pointer;
+}
+#vertical-separation{
+    height: 22px;
+    width: 1px;
+    background: #e0e0e0;
+    margin : 0px 54px 0px 64px;
+}
+.rb_verticals{
+    display: flex;
+    align-items : center;
+}
+.rb_vertical_bus{
+    display: flex;
+    flex-direction: column;
+    background-color :#d84e55;
+    border-radius : 7px;
+    padding : 1em 0.625rem;
+    border-radius: 0.5rem;
+    margin-right: 0.75rem;
+    text-align: center;
+    position: relative;
+    height: 42px;
+    cursor: pointer;
+}
+.rb_vertical_bus span{
+    color : white;
+    font-size : 14px;
+    font-weight: 500;
+}
+.rb_vertical_bus img{
+    width : 2.9rem;
+    height:  1.65rem;
+    margin-bottom: 0.5rem;
+    padding-left : 15px;
+}
+.rb_vertical_bus:hover{
+    opacity: 0.9;
+}
+.rb_vertical_train{
+    display : flex;
+    flex-direction: column;
+    padding : 1em 0.625rem;
+    border-radius: 0.5rem;
+    margin-right: 0.75rem;
+    text-align: center;
+    position: relative;
+    color : black;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+    font-weight: 500;
+    height : 42px;
+}
+.rb_vertical_train:hover{
+    background-color :rgb(235, 235, 235);
+}
+.rb_vertical_train span{
+    font-size: 14px;
+    margin-top: 12px;
+}
+.rb_vertical_train .rb_vertical_train_wrap .rb_vertical_img
+.img_tag{
+    color: white;
+    position : absolute;
+    background: #60b681;
+    border-radius :0.375rem;
+    font-size: 0.675rem;
+    font-weight: 500;
+    top: -0.625rem;
+    left:65%;
+    height: 1.063rem;
+    width: 3rem;
+    text-align: center;
+    margin-top: 15px;
+    padding-top : 3px;
+}
+.right-header{
+    margin-left: 495.531px;
+    display: flex;
+    gap: 20px;
+}
+.help-section{ 
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: none;
+    border-radius : 6px;
+    padding: 3.5px 9px;
+    transition: background-color 0.3s ease-in-out;
+    cursor : pointer;
+
+}
+.help-section:hover{
+    background-color: rgb(233, 233, 233);
+    font-weight: 500;
+}
+.help-section img{
+    height: 25px;
+}
+.help-section span , .account-section span{
+    margin : 0px 4px 0px 2px;
+    font-size: 14px;
+}
+.account-section{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: none;
+    border-radius : 6px;
+    padding: 3.5px 3px;
+    transition: background-color 0.3s ease-in-out;
+    cursor : pointer;
+}
+.account-section img:nth-child(1){
+    height : 27px;
+}
+.account-section img:nth-child(2){
+    height : 2px;
+    width : 2px;
+    margin-left : -10px;
+}
+.account-section:hover{
+    background-color: rgb(235, 235, 235);
+    font-weight: 500;
+}
+
+/* hero section */
+
+.hero-section{
+    background-image: url(https://s3.rdbuz.com/images/webplatform/india/HomeBannerNew_1600.webp);
+    width: 100%;
+    background-repeat: round;
+    background-size: cover;
+    height: 520px;
+    margin-top:100px;
+}
+.hero-section > h1{
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    padding : 45px 0px 0px 0px;
+    text-align: center;
+}
+.destination{
+    background-color: white;
+    display :flex;
+    align-items: center;
+    width : 83%;
+    height : 100px;
+    margin-left: 109px;
+    border-radius : 32px;
+    margin-top: 110px;
+}
+.vertical-partition{
+    background-color: #a5a4a4;
+    width: 1.4px;
+    height: 100px;
+}
+.bus-search{
+    height: 100px;
+    min-width: 243px;
+    max-width: max-content;
+    padding : 40px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius : 0px 32px 32px 0px;
+    border : none;
+    background-color:#d84e55;
+    color:rgb(255, 255, 255);
+    cursor: pointer;
+    font-family: "montserrat";
+}
+.destination img{
+    height: 20px;
+    width: 21px;
+}
+.bus-from{
+    display:flex;
+    gap: 20px;
+    justify-content: start;
+    width: 231px;
+    padding-left:30px;
+    padding-right :25px;
+    align-items : center;
+}
+
+.bus-to{
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+    width: 232px;
+    padding-left: 30px;
+    align-items : center;
+    padding-right : 26px;
+}
+.bus-date{
+    display:flex;
+    width: 162px;
+    padding-left:28px;
+    padding-right : 111px;
+}
+.bus-date img{
+    height: 38px;
+    width: 36px;
+}
+.bus-date span{
+    font-size : 20px;
+    font-weight :500;
+    color: #666666;
+    margin : 7px 0px 0px 10px;
+}
+.bus-from span , .bus-to span{
+    font-size:14px;
+    margin : 1px 0px 0px -5px;
+    color:#8b8b8b;
+}
+.from-input , .to-input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+.from-input input , .to-input input{
+    height: 25px;
+    width: 150px;
+    border: none;
+    font-size: 18px;
+    font-family: "montserrat";
+    font-weight:500;
+}
+.from-input input:focus , .to-input input:focus{
+    outline: none;
+}
+
+/*offers section*/
+
+.offers-div{
+    margin-top : -50px;
+    width: 88%;
+    display: flex;
+    flex-direction:column;
+    border-radius : 33px;
+    margin-left:86px;
+    box-shadow : 0px 1px 6px 1.2px rgb(202, 199, 199);
+}
+.heading{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    padding: 30px 36px 30px 36px;
+    border-radius: 33px;
+}
+.heading span{
+    font-size: 34px;
+    color:#525050;
+}
+.heading button{
+    font-size: 18px;
+    color: rgb(16, 52, 217);
+    font-weight: 600;
+    border: 1px solid rgb(170, 170, 170);
+    padding : 10px 24px;
+    cursor : pointer;
+    border-radius : 1.5rem;
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+    margin-left :58.5%;
+}
+.heading button:hover{
+    box-shadow: 1px 1px 4px rgb(194, 194, 194);
+}
+.offer-cards{
+    display: flex;
+    padding: 34px 34px;
+    gap :30px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-width: none;
+    scroll-behavior:smooth;
+}
+.offer-cards:hover{
+    mask: linear-gradient(90deg,#0000,#000 4% 95%,#0000);
+}
+.card-1{
+    border-radius:15px;
+    background: linear-gradient(90deg,#16469A,#2152AA,#376ECD);
+    height: 174px;
+    width: 319px;
+    display: flex;
+}
+.card-2{
+    background: linear-gradient(90deg,#2B4769,#336673,#45AE89);
+    border-radius:15px;
+    height: 174px;
+    width: 319px;
+    display: flex;
+}
+.card-3{
+    border-radius:15px;
+    background:linear-gradient(90deg, #630F13,#7C1C21,#C14249);
+    height: 174px;
+    width: 319px;
+    display: flex;
+}
+.card-4{
+    border-radius:15px;
+    background:linear-gradient(90deg , #177C4D,#36A26F,#66DCA4) ;
+    height: 174px;
+    width: 319px;
+    display: flex;
+}
+.offer-section-img img{
+    border-radius : 50%;
+    height:70px;
+    width: 70px;
+}
+.offer-section-img{
+    padding:32px 15px 0px 16px;
+}
+.offer-card-right-section{
+    display: flex;
+    flex-direction: column;
+    justify-content : start;
+}
+.offer-card-right-section button{
+    font-size: 13px;
+    font-family: Montserrat;
+    width: 49px;
+    border-radius: 14px;
+    border: none;
+    color: white;
+    background-color: #d7d6d44a;
+    padding: 3px 8px;
+    margin-top: 16px;
+    vertical-align: middle;
+}
+.offer-card-right-section h3{
+    color: white;
+    font-size:17.75px;
+    padding-right :15px;
+}
+.offer-card-right-section h5{
+    color :white;
+    font-size:12px;
+    font-weight:400;
+    margin-top: -10px;
+}
+.card-content-last{
+    display: flex;
+    align-content: center;
+    gap :12px;
+    margin-top:-8px;
+}
+.card-content-last button{
+    border : 1px dashed white;
+    border-radius : 5px;
+    padding: 4px;
+    width:fit-content;
+
+}
+.card-content-last img{
+    padding-top :15px;
+}
+
+/*_____ government_buses_section______*/
+
+.government_buses{
+    margin-top : 80px;
+    display: flex;
+    align-items: center;
+    gap : 43.5%;
+}
+.government_buses h1{
+    font-size: 40px;
+    font-weight : 400;
+    padding-left : 80px;
+}
+.government_buses button{
+    font-size: 18px;
+    color: rgb(16, 52, 217);
+    font-weight: 600;
+    border: 1px solid rgb(170, 170, 170);
+    padding : 10px 24px;
+    cursor : pointer;
+    border-radius : 1.5rem;
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+}
+.government_buses button:hover{
+    box-shadow: 1px 1px 4px rgb(194, 194, 194);
+}
+.govt-bus-cards{
+    display: flex;
+    margin-left : 85px;
+    gap :30px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-width: none;
+    scroll-behavior:smooth;
+    padding: 20px 34px;
+    clip-path: inset(0px 50px 0px 0px);
+    box-shadow : 0px 1px 6px 1.2px rgb(202, 199, 199);
+    mask: linear-gradient(90deg,#0000,#000 4% 87%,#0000);
+}
+.govt-bus-card-1{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.govt-bus-card-1-top{
+    display: flex;
+    flex-direction: column;
+    border-radius : 16px;
+    background : #fff;
+    min-width : 480px;
+    height: 198px;
+    box-shadow : 0px 1px 6px 1.2px rgb(202, 199, 199);
+}
+.card-section-1{
+    display: flex;
+    padding : 16px;
+}
+.card-section-1-right{
+    display: flex;
+    flex-direction: column;
+    padding-left :10px;
+}
+.card-section-2{
+    display: flex;
+    flex-direction:column ;
+}
+.card-section-1-left img{
+    height:54px;
+    width : 54px;
+}
+.card-section-1-right-top{
+    display: flex;
+    align-items: center;
+    gap : 15px;
+}
+.card-section-1-right-top span{
+    color: #1d1d1d;
+    font-size: 24px;
+    font-weight : 700;
+}
+.card-section-1-right-top button{
+    width : max-content;
+    font-size: 14px;
+    padding : 3px 6px;
+    color: #fff;
+    background : #007b2d;
+    border-radius : 8px;
+    border :none;
+    font-family :"Montserrat", sans-serif;
+}
+.card-section-1-right-top button img{
+    height : 14px;
+    width : 14px;
+    padding-right : 4px;
+}
+.card-section-1-right-bottom span{
+    color: rgb(111,111,111);
+    font-size: 18px;
+    font-weight : 500;
+    margin-top : 4px;
+    padding: 2px;
+    overflow : hidden;
+    text-overflow : ellipsis;
+    white-space: nowrap;
+}
+.card-horizontal-separator{
+    background-color: rgb(226, 217, 217);
+    height: 1px;
+}
+.card-section-2-top {
+    text-align: center;
+    margin : 0px 64px;
+    color: #4a4a4a;
+    font-size: 16px;
+    padding : 16px;
+}
+.card-section-2-bottom{
+    margin : 0px 16px;
+    border-radius : 8px;
+    background : #f3f3f8;
+    font-size: 14px;
+    font-weight : 500;
+    line-height : 16px;
+    height :24px;
+    text-align : center;
+}
+.card-section-2-bottom img {
+    width : 25px;
+    height : 1rem;
+    padding-right: 5px;
+}
+.govt-bus-card-1-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin : 4px 8px;
+    height : 26px;
+    font-size: 12px;
+    color : #1d1d1d;
+    text-align: center;
+    background :#FAE9EA;
+    line-height : 16px;
+    font-weight: 700;
+    border-radius : 0px 0px 15px 15px ;
+    min-width : 480px;
+}
+
+/*_____book-train-tickets-section_____*/
+
+.book-train-tickets{
+    margin-top : 75px;
+    display: flex;
+}
+.book-train-tickets-left{
+    width: 50%;
+    padding-left:10%;
+    margin-top: -3%;
+}
+.book-train-tickets-right{
+    background-image:url("https://s3.rdbuz.com/web/images/homeV2/AboutUs/aboutUsImg.svg");
+    background-repeat :no-repeat;
+}
+#book-train-tickets-left-1 h1{
+    font-size: 40px;
+    font-weight: 400;
+    line-height : 3.75rem;
+    color : rgb(29, 29, 29);
+}
+#book-train-tickets-left-1 span{
+    font-size: 40px;
+    font-weight: 700;
+}
+#book-train-tickets-left-1{
+    margin-left :0px;
+}
+#book-train-tickets-left-2{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 13px;
+    margin-top: 54px;
+}
+.book-train-tickets-left-2-1{
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    padding-left: 18px;
+    line-height: 24px;
+}
+.book-train-tickets-left-2-1 span{
+    color: rgb(216, 78, 85);
+    font-weight: 700;
+}
+.book-train-tickets-left-2-1 img{
+    width: 3.125rem;
+    height: 1.75rem;
+}
+.book-train-tickets-left-2-2{
+    height: 3px;
+    background: rgb(216, 78, 85);
+    width : 39%;
+}
+#book-train-tickets-left-3 p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2.125rem;
+    color:rgb(29, 29, 29);
+    margin-bottom: 1.5rem;
+}
+#book-train-tickets-left-3{
+    margin-top: 30px;
+}
+#book-train-tickets-left-4{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    margin-bottom: 44px;
+}
+#book-train-tickets-left-4 img{
+    width: 32px;
+    height: 32px;
+}
+.book-train-tickets-left-4-1{
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    height: 33px;
+}
+.book-train-tickets-left-4-2{
+    gap: 22px;
+    align-items: center;
+    display: flex;
+}
+.book-train-tickets-left-4-3{
+    gap: 22px;
+    align-items: center;
+    height: 33px;
+    display: flex;
+}
+#book-train-tickets-left-5 button{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 0.9rem 0.6rem 0.9rem 1rem;
+    cursor: pointer;
+    gap: 0.65rem;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: rgb(216, 78, 85);
+    border: 1px solid rgb(216, 78, 85);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    width: fit-content;
+}
+#book-train-tickets-left-5 button img{
+    height: 30px;
+    width: 29px;
+    margin-left: 0px;
+}
+
+  /* rb promotion section css */
+
+  .rb-promo-section{
+    display: flex;
+    flex-direction: column;
+    margin : 103px 160px;
+    background-image: url('https://s1.rdbuz.com/web/images/homeV2/appinstall/appInstallbg.svg');
+    background-repeat: no-repeat;
+    height: 442px;
+    border-radius: 48px;
+    width: 84%;
+    background-size: cover;
+    background-position: right center; 
+  }
+  .upper-section{
+    font-size: 28px;
+    color:  white;
+    padding: 5px 35px;
+    font-weight: 600;
+  }
+  .lower-section{
+    display: flex;
+    gap: 60px;
+  }
+  .leftmost-lower-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    width: 20rem;
+    margin-left: 35px;
+    gap: 58px;
+  }
+  .leftmost-lower-section-1{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left : 12px;
+  }
+  .leftmost-lower-section-1 small{
+    display: flex;
+    gap: 13px;
+    align-items: center; 
+  }
+  .leftmost-lower-section-1 span{
+    font-size: 1.125rem;
+    line-height: 22px;
+    font-weight: 600;
+    color: rgb(92, 91, 91);
+  }
+  .leftmost-lower-section-2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .left-part-lower-section{
+    display: flex;
+    flex-direction : column;
+  }
+  .leftmost-lower-section-2-2-1{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-bottom : -5px;
+  }
+.vertical-separator-lower-section{
+    width: 2px;
+    height: 65px;
+    margin-top: 30px;
+    background-color: rgb(177, 173, 173);
+}
+.leftmost-lower-section-2-2-2{
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 8px;
+}
+.leftmost-lower-section-2-2-3{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgb(29, 29, 29);
+}
+.middle-lower-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 50px;
+}
+.middle-lower-section span{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+}
+.right-lower-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+.right-lower-section span{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+}
+
+  /* Primo section  */
+
+  .primo-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .primo-section img{
+    border-radius: 40px 0px 0px 40px;
+  }
+  .primo-section-right{
+    height: 390px;
+    margin-left : -40px;
+    width: 300px;
+    border-radius: 40px;
+    background: rgb(35, 48, 88);
+    padding: 80px 42px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    justify-content: center;
+    align-items: start;
+    color: white;
+  }
+  .primo-section-right-1{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .primo-section-right-1 h1{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 5px;
+  }
+  .primo-section-right-1 span{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .primo-section-right-1 img{
+    height: 60px;
+    width: 60px;
+  }
+
+  /* ____flag-section______ */
+
+  .flag-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    margin-left: 165px;
+    margin-bottom: 150px;
+    cursor :pointer;
+  }
+  .flag-section section{
+    display: flex;
+    align-items : center;
+    gap: 27px;
+  }
+  .flag-section small{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .flag-section > span{
+    margin: 0px 0px 2rem;
+    font-size: 1.75rem;
+    line-height: 3rem;
+    color: rgb(29, 29, 29);
+    font-weight: 600;
+  }
+  .flags-name-section span{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    color: rgb(29, 29, 29);
+    padding: 0.4rem 1rem;
+    border-radius : 20px;
+    transition: background 0.25s ease-in-out;
+  }
+  .flags-name-section span:hover{
+    background:rgb(207, 206, 206);
+  }
+
+  .flags-name-section img{
+    height: 6.25rem;
+    width: 6.25rem;
+  }
+
+  /* _______Paragraph-section_________ */
+
+  .paragraph-section{
+    display: flex;
+    flex-direction: column;
+    padding-left: 120px;
+    margin-bottom: 50px;
+  }
+
+  .paragraph-section span{
+    color: #1D1D1D;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.5rem;
+    margin-bottom : 30px;
+  }
+  .paragraph-section p{
+    color: #1D1D1D;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+    margin-bottom : 15px;
+  }
+  .paragraph-section a{
+    text-decoration: none;
+    color:rgb(24, 60, 219);
+  }
+
+  /* _______Footer section_____ */
+
+  .footer-section{
+    background : white;
+  }
+
+.footer-section-1{
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+    padding: 50px 110px 60px 95px; 
+}
+.footer-section-1 img{
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+.footer-section-1 span{
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+}
+.footer-section-1 small{
+    display: flex;
+    justify-content: space-between;
+}
+.hr-div{
+    height: 1px;
+    background: rgb(187, 183, 183);
+    margin-top: -20px;
+}
+.footer-section-2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-section-2-1{
+    display: flex;
+    flex-direction: column;
+}
+.footer-section-2-1 img{
+    width: 6.25rem;
+    height: 4.1rem;
+}
+.footer-section-2-1 p{
+    padding-top: 10px;
+    color: #3e3e52;
+    font-size: 14px;
+}
+.footer-section-2-2{
+    display: flex;
+    flex-direction: column;
+}
+.footer-section-2-2 h4{
+    font-size: 18px;
+}
+.footer-section-2-2 span{
+    color: #3e3e52;
+    font-size: 15px;
+    line-height: 30px;
+}
+.footer-section-3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px 10px 30px;
+    background:rgb(226, 226, 226);
+    margin-top: -8px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #3e3e52;
+}
+.footer-section-3 span{
+    padding: 0px 4px 0px 4px;
+}
+.footer-section-3 div{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
